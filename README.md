@@ -1,10 +1,5 @@
 [![HitCount](http://hits.dwyl.com/3NCRY9T3R/H4CKT0B3RF3ST-2020.svg)](http://hits.dwyl.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
-
-
-
 
 # <div align="center">🖥️H4CKT0B3RF3ST 2020💻</div>
 
