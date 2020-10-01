@@ -1,7 +1,7 @@
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg?style=flat)]()
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)  
-[![HitCount](http://hits.dwyl.io/tterb/Hyde.svg)](http://hits.dwyl.io/tterb/Hyde)
-[![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat)]()  
+![GitHub stars](https://img.shields.io/github/stars/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)
+![GitHub forks](https://img.shields.io/github/forks/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)
+![GitHub followers](https://img.shields.io/github/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)  
 
 
 
