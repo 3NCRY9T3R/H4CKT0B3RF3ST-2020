@@ -1,7 +1,8 @@
-![GitHub stars](https://img.shields.io/github/stars/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)
-![GitHub forks](https://img.shields.io/github/forks/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)
-![GitHub followers](https://img.shields.io/github/3NCRY9T3R/H4CKT0B3RF3ST-2020?style=social)  
+[![HitCount](http://hits.dwyl.com/3NCRY9T3R/H4CKT0B3RF3ST-2020.svg)](http://hits.dwyl.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
+
 
 
 
@@ -45,6 +46,7 @@
   ### And again on the same button on the next window.
   ![](https://i.ibb.co/m95QGHK/request.jpg)
 <br></br>
+
 
 
 ##
