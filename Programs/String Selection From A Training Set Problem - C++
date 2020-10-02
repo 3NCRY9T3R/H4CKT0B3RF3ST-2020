@@ -1,0 +1,57 @@
+
+// Link for the Codechef Solution : https://www.codechef.com/viewsolution/37194961
+// Name of the Problem : TRAINSET
+
+#include <iostream>
+#include <map>
+#include <bits/stdc++.h>
+#include <set>
+#include <utility>
+#include <string>
+#include <iterator>
+#define ll long long
+#define pb push_back 
+#define vl vector<long long>
+#define vi vector<int>
+using namespace std;
+
+
+
+void solve()
+{
+
+	int n;
+	cin>>n;
+	map<string,int> map0;
+	map<string,int> map1;
+	int count=0;
+	string ar[n];
+	//map<string,pair<int,int>> mpair;
+	for(int i=0;i<n;i++)
+	{
+		string w;
+		int s;
+		cin>>w>>s;
+		ar[i]=w;
+		if(s==0) ++map0[w];
+		else ++map1[w];
+	}
+	map<string,int> m3;
+	for(int i=0;i<n;i++)
+
+	{
+		++m3[ar[i]];
+		if(m3[ar[i]]==1)
+			count+=max(map0[ar[i]],map1[ar[i]]);
+	}
+	cout<<count<<"\n";
+}
+int main()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int t;
+	cin>>t;
+	while(t--)
+		solve();
+}
