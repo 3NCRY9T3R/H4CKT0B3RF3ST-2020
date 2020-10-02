@@ -1,0 +1,7 @@
+my_list = ['ultra','gaming','new','coding','living','nerd']
+def divide_chunks(l,n):
+for i in range(0, len(1),n):
+yield l[i:i + n]
+n = 5
+x = list(divide_chunks(my_list, n))
+print(x)
