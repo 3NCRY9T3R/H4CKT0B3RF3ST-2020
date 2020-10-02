@@ -1,0 +1,41 @@
+// Codechef September Long Challenge Problem - Root The Tree
+//Link for the Submission : https://www.codechef.com/viewsolution/38275964 
+
+#include <bits/stdc++.h>
+#define ll long long
+#define pb push_back 
+#define vl vector<long long>
+#define vi vector<int>
+#define endl "\n"
+using namespace std;
+
+void solve()
+{
+	int n;
+	cin >> n;
+	vector<int> in(n+1,0);
+	for(int i=0;i<n-1;i++)
+	{
+		int u,v;
+		cin >> u >> v;
+		in[v]++; 
+	}
+	int cnt = 0;
+	for(int i=1;i<=n;i++)
+	{
+		if(in[i]==0) ++cnt;
+	}
+	cout << cnt-1 << endl;
+}
+
+
+
+int  main()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int t;
+	cin>>t;
+	while(t--) solve();
+
+}
