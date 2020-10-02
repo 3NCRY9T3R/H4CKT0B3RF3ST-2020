@@ -1,6 +1,6 @@
 //Problem - One Odd Occuring
 //Given an array of integers where all elements appear even number of times except only one element which appears odd no. of times
-//Find that one odd-occuring element
+//Find that one odd-occurring element
 
 /*
 There are many ways to solve this -
