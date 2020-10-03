@@ -1,0 +1,35 @@
+t=0:0.01:1;
+f1=3;
+x1=sin(2*pi*f1*t);
+figure;
+subplot(2,1,1);
+plot(t,x1)
+title('Sine Wave');
+xlabel('Time-->');
+ylabel(''Amplitude-->);
+grid;
+[rxx lag1]= xcorr(x1);
+subplot(2,1,2);
+plot(lag1,rxx);
+grid;
+title('Auto-Correlation Of Sine Wave');
+figure;
+subplot(2,2,1);
+plot(t,x1);
+title('Sine Wave x1');
+xlabel('Time-->')
+ylabel('Amplitude-->')
+grid;
+f2=2;
+x2=sin(2*pi*f2*t);
+subplot(2,2,2);
+plot(t,x2);
+title('Sin Wave');
+xlabel('Time-->'):
+ylabel('Amplitude-->');
+grid;
+[cxx lag2]=xcorr(x1,x2);
+subplot(2,2,[3,4]);
+plot(lag2,cxx);
+grid;
+title('Cross-correlation function of the Sine Wave');

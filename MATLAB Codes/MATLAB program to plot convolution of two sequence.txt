@@ -1,0 +1,28 @@
+clc;
+clear all;
+close all;
+n=0:8;
+x1=1;
+x2=0;
+y1=x1.*(n>=0&n<=2)+x2.*(n>=2&n<=8);
+subplot(2,2,1)
+stem(n,y1)
+axis([0 8 0 1.5]);
+xlabel('time n-->');
+ylabel('Amplitude-->');
+title('the sequnce y1[n]');
+y2=x1.*(n>=0&n<=4)+ x2.*(n>=4&n<=8);
+subplot(2,2,2);
+stem(n,y2)
+axis([0 8 0 1.5]);
+xlabel('time n-->');
+ylabel('Amplitude-->');
+title('the Sequence y2[n]');
+y=conv(y1,y2);
+L= length(y);
+n=0:L-1;
+subplot(2,2,[3,4]);
+stem(n,y);
+axis([0 10 0 4]);
+xlabel('Amplitude-->');
+title('The convolution Sequence of y1[n]&y2[n]');

@@ -1,0 +1,48 @@
+clc
+n= -10:0.01:10;
+x=[zeros(1,1000),ones(1,1001)]
+subplot(3,3,1)
+plot(n,[zeros(1,1000),ones(1,1001)],'g')
+grid on
+
+a=-10:1:10;
+x=[zeros(1,10), ones(1,11)]
+subplot(3,3,2)
+plot(a,[zeros(1,10), ones(1,11)],'g')
+grid on
+stem(a,x)
+
+b=-10:0.01:10;
+x=[zeros(1,1000),ones(1),zeros(1,1000)]
+subplot(3,3,3)
+plot(n,[zero(1,1000),ones(1),zero(1,1001)],'g')
+grid on
+
+c=-10:1:10;
+x=[zeros(1,10),ones(1),zeros(1,10)]
+subplot(3,3,4)
+plot(c,[zeros(1,10),ones(1),zeros(1,10)], 'g')
+grid on
+stem(c,x)
+
+unitstep=n>=0;
+ramp=n.*unitstep;
+subplot(3,3,5);
+plot(n,ramp,'g');
+grid on;
+unitstep=d>=0;
+ramp=d.*unitstep;
+d=-10:1:10;
+subplot(3,3,6)
+plot(d,ramp,'g')
+grid on
+stem(d,ramp)
+
+q= -1:0.1:2;
+y=exp(q);
+subplot(3,3,7)
+plot(q,y,'g')
+grid on
+subplot(3,3,8)
+grid on
+stem(q,y)

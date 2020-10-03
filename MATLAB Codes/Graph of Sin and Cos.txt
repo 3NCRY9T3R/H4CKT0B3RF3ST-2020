@@ -1,0 +1,17 @@
+x=-pi:0.1:pi;
+y=sin(x);
+subplot(2,2,1);
+plot(x,y); grid on;
+title('Graph of SIN');
+subplot(2,2,2);
+stem(x,y); grid on;
+title('Graph of SIN');
+
+x=-pi:0.1:pi;
+y=Cos(x);
+subplot(2,2,3);
+plot(x,cos(x)); grid on;
+title('Graph of COS');
+subplot(2,2,4);
+stem(x,cos(x)); grid on;
+title('Graph of COS');

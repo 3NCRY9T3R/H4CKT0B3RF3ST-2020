@@ -1,0 +1,19 @@
+clc
+clear all
+close all
+pkg 
+syms t int;
+syms w float;
+f=3*exp(-t)*heaviside(t);
+r=fourier(f);
+r
+disp('Fourier Function of 3*exp(-t)*u(t)');
+w=-2*pi:pi/50:2*pi;
+w
+f1=subs(r,w);
+f1
+subplot(2,2,1),plot(w,f1),title('Fourier Series'),xlabel('w-->'),ylabel('Fourier Values-->')
+m=abs(f1)
+p=angle(f1)
+subplot(2,2,2),plot(w,m),title('Magnitude Spectrum'),xlabel('w-->'),ylabel('Magnitude-->')
+subplot(2,2,3),plot(w,p),title('Phase Spectrum'),xlabel('w-->'),ylabel('Phase-->')

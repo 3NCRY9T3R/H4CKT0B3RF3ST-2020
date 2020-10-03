@@ -1,0 +1,17 @@
+clc;
+clear all;
+close all;
+syms t;
+y=heaviside(t+2)-heaviside(t-2)
+subplot(2,2,1)
+ezplot(y);
+f=fourier(y)
+x=simplify(f)
+subplot(2,2,2)
+ezplot(x)
+a=abs(x)
+subplot(2,2,3)
+ezplot(a)
+b=angle(x)
+subplot(2,2,4)
+ezplot(b)
