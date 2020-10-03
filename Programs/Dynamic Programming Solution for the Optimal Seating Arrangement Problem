@@ -1,0 +1,47 @@
+// Link for my Codechef Solution : https://www.codechef.com/viewsolution/37064682
+// Problem Name : Chef And Wedding Arrangements
+
+
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back 
+#define vl vector<long long>
+#define vi vector<int>
+
+using namespace std;
+
+void solve()
+{
+	int n,k;
+	cin>>n>>k;
+	int dp[n+1];
+	int ar[n+1];
+	for(int i=1;i<=n;i++) cin>>ar[i];
+	dp[0]=0;
+	for(int i=1;i<=n;i++)
+	{
+		dp[i]=dp[i-1]+k;
+		map<int,int> mp;
+		int clash=0;
+		for(int j=i;j>=1;j--)
+		{
+			mp[ar[j]]++;
+			if(mp[ar[j]]==2) clash+=2;
+			else if(mp[ar[j]]>2) clash++;
+			dp[i]=min(dp[i],dp[j-1]+k+clash);
+		}
+	}
+	cout<<dp[n]<<"\n";	
+}
+		
+ 
+                 
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+int t;
+cin>>t;
+while(t--) solve();
+}
+
