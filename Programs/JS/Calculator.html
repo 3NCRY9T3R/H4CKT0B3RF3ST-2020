@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE> Scientific CALCULATOR </TITLE>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"> </script>
+</HEAD>
+<BODY>
+<div class="display-5 font-weight-bold  text-center"> SCIENTIFIC CALCULATOR </div>
+<br>
+<ul class="nav">
+ <li class="nav-item"><button id="advance" type="button" class="btn btn-info"> Advanced </button></li>
+ <li class="nav-item"><button id="change" type="button" class="btn btn-info"> Dark Mode </button></li>
+ </ul>
+ <form name = "calc">
+<table class="table table-borderless mx-auto" id="calc">
+<tr> <th colspan = "25"> <input id="btn"  name="display"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text">  </th></tr>
+<tr>
+ <td class="btn btn-lg  btn-outline-dark rounded adv" value="Pi" OnClick="calc.display.value+=Math.PI"> Pi</td>
+ <td class="btn btn-lg  btn-outline-dark rounded adv" value="e" OnClick="calc.display.value+=Math.E"> e </td>
+ <td class="btn btn-lg  btn-outline-dark rounded adv" value="percent" OnClick="calc.display.value= calc.display.value/100"> % </td>
+ <td class="btn btn-lg  btn-warning rounded adv" value="1/x"OnClick="calc.display.value+='1/'"> 1/x </td>
+</tr>
+
+<tr>
+ <td class="btn btn-lg btn-outline-dark  rounded adv" value="^" OnClick="calc.display.value=(calc.display.value*calc.display.value)"> x<sup>2</sup></td>
+ <td class="btn btn-lg btn-outline-dark  rounded adv" value="(" OnClick="calc.display.value+='('"> ( </td>
+ <td class="btn btn-lg btn-outline-dark rounded adv" value=")" OnClick="calc.display.value+=')'"> ) </td>
+  <td class="btn btn-lg btn-warning rounded adv" value="%" OnClick="calc.display.value+='%'")"> mod </td>
+</tr>
+
+<tr>
+ <td class="btn btn-lg btn-outline-dark rounded" value="C" OnClick="calc.display.value=' '"> AC </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="+/-" OnClick="calc.display.value+='-('")"> +/- </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="/" OnClick="calc.display.value+='/'""> / </td>
+ <td class="btn btn-lg btn-warning rounded" value="back" OnClick="calc.display.value = calc.display.value.substring(0, calc.display.value.length-1)"> BS </td>
+</tr>
+
+<tr>
+ <td class="btn btn-lg btn-outline-dark rounded" value="7" OnClick="calc.display.value+='7'"> 7 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="8" OnClick="calc.display.value+='8'"> 8 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="9" OnClick="calc.display.value+='9'"> 9 </td>
+ <td class="btn btn-lg btn-warning rounded" value="*" OnClick="calc.display.value+='*'">  X </td>
+</tr>
+
+<tr>
+ <td class="btn btn-lg btn-outline-dark rounded" value="4" OnClick="calc.display.value+='4'"> 4 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="5" OnClick="calc.display.value+='5'"> 5 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="6" OnClick="calc.display.value+='6'"> 6 </td>
+ <td class="btn btn-lg btn-warning rounded" value="-" OnClick="calc.display.value+='-'""> - </td>
+</tr>
+
+<tr>
+ <td class="btn btn-lg btn-outline-dark rounded" value="1" OnClick="calc.display.value+='1'"> 1 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="2" OnClick="calc.display.value+='2'"> 2 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="3" OnClick="calc.display.value+='3'"> 3 </td>
+ <td class="btn btn-lg btn-warning rounded" value="+" OnClick="calc.display.value+='+'"> + </td>
+</tr>
+
+ <tr>
+ <td class="btn btn-lg btn-outline-dark rounded" value="00" OnClick="calc.display.value+='00'"> 00 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="0" OnClick="calc.display.value+='0'"> 0 </td>
+ <td class="btn btn-lg btn-outline-dark rounded" value="." OnClick="calc.display.value+='.'"> . </td>
+ <td class="btn btn-lg btn-warning rounded" value="=" OnClick="calc.display.value = eval(calc.display.value)"> = </td>
+</tr>
+</table>
+</form>
+</BODY>
+</HTML>

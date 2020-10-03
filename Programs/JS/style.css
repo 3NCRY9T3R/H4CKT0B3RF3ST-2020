@@ -1,0 +1,40 @@
+.table {
+    height : 60%;
+    width : 30%;
+    margin : 50px;
+	margin-top: 20px;
+	text-align : center;
+}
+ul {
+	 margin-left : 60px;
+}
+input {
+	 height : 40%;
+	 width : 30%;
+     margin : 5px;
+	 text-align : center;
+	 font-size : 25px;
+}
+.btn {
+	 padding : 5px;
+	 margin : 5px;
+}
+.display-5 {
+	 font-family: 'Shadows Into Light', cursive;
+	 color : #FF7F50 ;
+	 font-style : italic ;
+	 font-size : 40px;
+	 text-align : center;
+}
+body {
+	 font-family: 'ABeeZee', sans-serif;
+	 color : Black;
+	 background-color: #F5F5DC ;
+}
+#btn
+{
+	border : 2px solid black;
+	width : 300px;
+	height : 50px;
+	font-size : 30px;
+}

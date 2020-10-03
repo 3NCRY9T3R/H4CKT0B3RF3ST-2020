@@ -1,0 +1,11 @@
+ $(document).ready(function(){
+  $("#change").click(function(){
+	$(".table").toggleClass("table-dark");
+	$(".btn").toggleClass("btn-secondary","text-white");
+	$("input").toggleClass("bg-secondary","text-light");
+	$("Body").toggleClass("bg-dark");
+  });
+  $("#advance").click(function(){
+	$(".adv").toggle();
+  });
+});
