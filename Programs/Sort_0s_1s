@@ -1,0 +1,37 @@
+#include "iostream"
+#include "algorithm"
+#include "string"
+#include "vector"
+#include "queue"
+#include "math.h"
+#include "stdlib.h"
+#include "conio.h"
+#include "ctype.h"
+using namespace std;
+
+void segregate0and1(vector<int> &arr) 
+{ 
+    int no_of_1s = 0;
+    for( int i = 0 ; i < arr.size() ; i++ )
+    	if(arr[i])
+    		no_of_1s++;
+    for( int i = 0 ; i < arr.size() - no_of_1s ; i++ )
+    	arr[i] = 0;
+    for( int i = arr.size() - no_of_1s ; i < arr.size()  ; i++ )
+    	arr[i] = 1;
+} 
+  
+// Driver Code 
+int main() 
+{ 
+    vector<int> arr = {0, 1, 0, 1, 1, 1, 0, 0}; 
+    int i;
+  
+    segregate0and1(arr); 
+  
+    cout << "Array after segregation is "; 
+    for (i = 0; i < arr.size(); i++) 
+        cout << arr[i] << " "; 
+  
+    return 0; 
+}
