@@ -1,5 +1,7 @@
-//Function to sort the array using 'Insertion sorting' method
+#include <stdio.h>
+#include <stdlib.h>
 
+//Function to sort the array using 'Insertion sorting' method
 void insertionSort(int arr[],int n)
 {
  int temp,i,j;
@@ -14,7 +16,6 @@ void insertionSort(int arr[],int n)
      }
      arr[j+1]=temp;
    }
-   
    //to print array
     printf("Sorted array is -\n");
     for(int k=0;k<n;k++)
@@ -37,3 +38,4 @@ int main()
     insertionSort(inputArr,n);
     return 0;
 }
+
