@@ -1,0 +1,50 @@
+#include "iostream"
+#include "algorithm"
+#include "string"
+#include "vector"
+#include "queue"
+#include "math.h"
+#include "stdlib.h"
+#include "ctype.h"
+using namespace std;
+
+typedef pair<int, pair<int, int>> p;
+
+vector<int> mergeKArrays(vector<vector<int>> arr)
+{
+    vector<int> res;
+
+    priority_queue<p, vector<p>, greater<p>> pq;
+
+    for (int i = 0; i < arr.size(); i++)
+        pq.push({arr[i][0], {i, 0}});
+
+    while (pq.empty() == false)
+    {
+        p curr = pq.top();
+        pq.pop();
+
+        int i = curr.second.first;
+        int j = curr.second.second;
+
+        res.push_back(curr.first);
+
+        if (j + 1 < arr[i].size())
+            pq.push({arr[i][j + 1], {i, j + 1}});
+    }
+
+    return res;
+}
+int main()
+{
+    vector<vector<int>> arr{{2, 6, 12},
+                            {1, 9},
+                            {23, 34, 90, 2000}};
+
+    vector<int> merged = mergeKArrays(arr);
+
+    cout << "Merged array is " << endl;
+    for (int i = 0; i < merged.size(); i++)
+        cout << merged[i] << " ";
+    return 0;
+}
