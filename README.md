@@ -73,8 +73,10 @@
 
 ### If you need any help, Contact me at **7991885162**(call or WhatsApp) at any time 24*7.😊
 ##
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
-[![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
-[![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://GitHub.com/Naereen/)
+
+<img src="http://ForTheBadge.com/images/badges/built-with-swag.svg" align="center"></img>
+<img src="http://ForTheBadge.com/images/badges/makes-people-smile.svg" align="center"></img>
+<img src="http://ForTheBadge.com/images/badges/built-with-love.svg" align="center"></img>
+
 
 ## <div align="center">🤞Happy Coding🤞</div>
