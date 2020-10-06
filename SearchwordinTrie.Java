@@ -1,4 +1,4 @@
-// Code: Search word in Trie
+// Code: Search word in Trie.Java
 // Send Feedback
 // Implement the function SearchWord for the Trie class.
 // For a trie, write the function for searching a word. Return true if found successfully otherwise return false.
