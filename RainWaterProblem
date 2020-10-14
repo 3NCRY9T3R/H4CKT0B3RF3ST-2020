@@ -1,0 +1,86 @@
+#include <iostream>
+using namespace std;
+
+// int TrappingRainWater(int arr[],int n)
+// {
+//     int maxwater=0;
+//     int left,right;
+    
+//     for(int i=0;i<n-1;i++)
+//     {
+//         left =arr[i];
+        
+//         for(int j=0;j<i;j++)
+//         {
+//             left =max(left,arr[j]);
+//         }   
+//         right=arr[i];
+//         for(int j=i+1;j<n;j++)
+//         {
+//             right =max(right,arr[j]);
+//         }   
+         
+        
+//         maxwater = maxwater +(min(left,right) - arr[i]);
+        
+//     }
+//     return maxwater;
+// }
+
+
+int optimisedRainWater(int arr[] ,int n)
+{
+    int water =0 ;
+    int left_max =0 ;
+    int right_max=0 ;
+    int low =0 ;
+    int high =n-1;
+    
+    while(low<high)
+    {
+        if(arr[low]<arr[high])
+        {
+            if(arr[low]>left_max)
+                {
+                    left_max =arr[low];
+                }
+            else
+                {
+                    water =water +(left_max-arr[low]);
+                    low++;
+                }
+        }
+        else
+        {
+            if(arr[high>right_max])
+            {
+                right_max=arr[high];
+            }
+            else
+            {
+                water =water+(right_max-arr[high]);
+                high--;
+            }
+        }
+    }
+    return water;
+}
+
+int main() {
+	
+	int n;
+	cin>>n;
+	int arr[n];
+	
+	for(int i=0;i<n;i++)
+	{
+	    cin>>arr[i];
+	}
+	
+	int res;
+    res = optimisedRainWater(arr,n);
+//	res =TrappingRainWater(arr,n);
+	cout<<res;
+	
+	return 0;
+}
