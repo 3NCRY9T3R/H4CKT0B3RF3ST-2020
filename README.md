@@ -8,7 +8,8 @@
 
 ### <div align="center">STEPS:-</div>
 
-  ### 1. Create a GitHub account( It's free:) )
+  ### 1. Create a GitHub account at https://github.com/( It's free:) )
+![](https://i.ibb.co/L1ksc1B/aaa.jpg)
 <br></br>
 ##
   ### 2. Go to https://hacktoberfest.digitalocean.com and sign up for a new profile by providing authentication with Github.(It's   very     easy, just follow the steps)
