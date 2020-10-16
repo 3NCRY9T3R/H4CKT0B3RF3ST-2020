@@ -1,0 +1,58 @@
+//#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
+#define ll long long
+#define pb push_back 
+#define vl vector<long long>
+#define vi vector<int>
+#define endl "\n"
+
+using namespace std;
+
+void solve()
+{
+ll n,k,f=0;
+cin>>n>>k;
+ll ar[n], cnt=0;ll sum=0;
+for(int i=0;i<n;i++) cin>>ar[i];
+
+	for(int i=0;i<n;i++)
+	{
+		if(sum<0) break;
+		++cnt;
+		sum=sum+ar[i]-k;
+	}
+	if(sum<0)
+	cout<<cnt<<endl;
+	else  
+	{
+		cnt=n+1+(sum/k);
+		cout<<cnt<<endl;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+	
+
+
+
+int main()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		solve();
+	}
+}
