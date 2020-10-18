@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int getLargest(int smallest[]) {
+int getLargest(int smallest[]) 
+{
     int index = 0, i;
     for (i = 0; i<3; i++) {
         if (smallest[i] > smallest[index]) {
