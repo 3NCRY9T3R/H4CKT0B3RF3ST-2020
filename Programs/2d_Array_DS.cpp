@@ -61,11 +61,11 @@ int hourglassSum(vector<vector<int>> arr) {
     for(int i=0;i<4;i++){
         for(int j=0;j<4;j++){
             ans=func(arr,i,j);
-            cout<<"for "<<i<<" "<<j<<" the sum is : "<<ans;
+            cout<<"for "<<i<<" "<<j<<", the sum is : "<<ans;
             sum = max(sum,ans);
         }
     }
-    return sum;
+    return sum ;
 }
 
 int main()
