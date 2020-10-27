@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+    int n;
+    while(!cin.eof()){
+        cin>>n;
+        map<int,int>m;
+        int count=0;
+        for(int j=0;j<n;j++)
+        {
+            int a,b;
+            cin>>a>>b;
+            m[a]=b;
+        }
+        int k;
+        cin>>k;
+        for(auto x:m)
+        {
+            if(x.first<=k && x.second>=k)
+            {
+                break;
+            }
+            else if(x.second<k){
+                count++;
+            }
+        }
+        cout<<n-count<<endl;
+    }
+    
+  return 0;
