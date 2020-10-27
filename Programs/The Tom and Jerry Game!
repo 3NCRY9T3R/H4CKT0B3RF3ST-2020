@@ -1,0 +1,32 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  long long n;
+  cin>>n;
+  
+  for(long long i=0;i<n;i++)
+  {
+    long long count=0;
+    long long ts;
+    cin>>ts;
+    
+      if(ts%2==0)
+      {
+                while(ts%2==0)
+        ts/=2;
+        
+      }
+      if(ts%2==1 )
+      {
+        count=ts/2;
+      }
+      
+    
+    cout<<count<<endl;
+    
+  }
+
+  return 0;
+}
