@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int n;
+  cin>>n;
+  for(int i=0;i<n;i++)
+  {
+      int c;
+      cin>>c;
+      stack<int>q;
+      string s;
+      cin>>s;
+      int count=0;
+      
+      for(int j=0;j<s.length();j++)
+      {
+          if(s[j]==43)
+          {
+              q.push(1);
+              count++;
+          }
+          else if(s[j]==45)
+          {
+              if(!q.empty())
+              {
+                  q.pop();
+                  count--;
+              }
+          }
+      }
+      cout<<count<<endl;
+      
+  }
+  return 0;
+}
