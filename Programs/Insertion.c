@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-main() {
+#include<stdlib.h>
+int main() {
    int LA[] = {1,3,5,7,8};
    int item = 10, k = 3, n = 5;
    int i = 0, j = n;
