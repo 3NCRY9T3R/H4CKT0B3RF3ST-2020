@@ -5,6 +5,7 @@
 
 
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     char arr[5][10]; //character array
     int n;           //accepting  number of strings from user
