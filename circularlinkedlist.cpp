@@ -21,9 +21,11 @@ void insert(int newdata) {
 void display() {
    struct Node* ptr;
    ptr = head;
+   if(head==NULL)
+      return;
    do {
       cout<<ptr->data <<" ";
-      ptr = ptr->next;
+      ptr = ptr->next;//it will show error if head==NULL.Hence to be checked 
    } while(ptr != head);
 }
 int main() {
