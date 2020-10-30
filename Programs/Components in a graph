@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+#define int long long
+using namespace std;
+
+class Graph{
+    unordered_map<int,list<int>>l;
+public:
+    void add_edge(int x,int y){
+        l[x].push_back(y);
+        l[y].push_back(x);
+    }
+    int bfs(int src,unordered_map<int,bool>&visited){
+        queue<int>q;
+        q.push(src);
+        visited[src]=true;
+        int count=1;
+        while(!q.empty()){
+            int node=q.front();
+            q.pop();
+            for(auto x:l[node]){
+                if(visited[x]==false){
+                    count++;
+                    visited[x]=true;
+                    q.push(x);
+                }
+            }
+        }
+        return count;
+    }
+};
+
+
+
+
+int32_t main() {
+    int n;
+    cin>>n;
+    Graph g;
+    for(int i=0;i<n;i++){
+        int x,y;cin>>x>>y;
+        g.add_edge(x,y);
+    }
+    int maximum=INT_MIN;
+    int minimum=INT_MAX;
+
+    unordered_map<int,bool>visited;
+    for(int i=1;i<=2*n;i++){
+        visited[i]=false;
+    }
+    for(int i=1;i<=2*n;i++){
+        if(visited[i]==false){
+            int a=g.bfs(i,visited);
+            if(a>maximum && a>1) maximum=a;
+            if(a<minimum && a>1) minimum=a;
+        }
+    }
+    cout<<minimum<<" "<<maximum<<endl;
+    return 0;
+}
