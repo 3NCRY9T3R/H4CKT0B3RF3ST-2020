@@ -1,0 +1,67 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+typedef vector <int> vi;
+typedef pair< int ,int > pii;
+#define endl "\n"
+#define sd(val) scanf("%d",&val)
+#define ss(val) scanf("%s",&val)
+#define sl(val) scanf("%lld",&val)
+#define debug(val) printf("check%d\n",val)
+#define all(v) v.begin(),v.end()
+#define PB push_back
+#define MP make_pair
+#define FF first
+#define SS second
+#define int long long
+#define MOD 1000000007
+#define clr(val) memset(val,0,sizeof(val))
+#define what_is(x) cerr << #x << " is " << x << endl; 
+#define OJ \
+    freopen("input.txt", "r", stdin); \
+    freopen("output.txt", "w", stdout);
+#define FIO ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+ 
+int find_answer(priority_queue<int>pq,int n,int &z){
+    int moves=0;
+    while(1){
+        int x=pq.top();
+        if(x>0){
+            z-=x;
+            x=x/2;
+            moves++;
+            if(z<=0){
+                break;
+            }
+            pq.pop();
+            pq.push(x);
+        }
+        else{
+            moves=-1;
+            break;
+        }
+    }
+    return moves;
+}
+int32_t main() 
+{
+    //OJ;FIO;
+    int t;cin>>t;
+    for(int i=0;i<t;i++){
+        int n,z;
+        cin>>n>>z;
+        priority_queue<int>pq;
+        for(int j=0;j<n;j++){
+            int a;cin>>a;
+            pq.push(a);
+        }
+        int ans=find_answer(pq,n,z);
+        if(ans==-1){
+            cout<<"Evacuate"<<endl;
+        }
+        else{
+            cout<<ans<<endl;
+        }
+    }
+    return 0;
+}
