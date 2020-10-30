@@ -1,0 +1,17 @@
+n=int(input())
+l1=input().split(" ")
+nl1=list(map(int,l1))
+m=int(input())
+l2=input().split(" ")
+nl2=list(map(int,l2))
+nl1=set(nl1)
+nl2=set(nl2)
+a=nl1.difference(nl2)
+b=nl2.difference(nl1)
+c=a.union(b)
+c1=list(c)
+c1.sort()
+for i in c1:
+    print(i)
+
+
