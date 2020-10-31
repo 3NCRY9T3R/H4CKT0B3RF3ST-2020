@@ -1,7 +1,9 @@
-[![HitCount](http://hits.dwyl.com/3NCRY9T3R/H4CKT0B3RF3ST-2020.svg)](http://hits.dwyl.com/3NCRY9T3R/H4CKT0B3RF3ST-2020)
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-
 # <div align="center">🖥️H4CKT0B3RF3ST 2020💻</div>
+
+<p align="center">
+<img src="https://socialify.git.ci/3NCRY9T3R/H4CKT0B3RF3ST-2020/image?description=1&font=Inter&forks=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="H4CKT0B3RF3ST-2020" width="640" height="320" />
+</p>
+
 
 ### <div align="center">This repo's main purpose is to help newbies👶 to complete the Hacktoberfest Challenge.</div>
 <br></br>
