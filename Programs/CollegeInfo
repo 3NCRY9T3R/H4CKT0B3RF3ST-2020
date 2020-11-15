@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class CollegeInfo
+{
+    public static void main(String[] args) {
+        String[] abc ={"Location","Courses","Fees","Avg Pckg","No. of Library","About faculties"};
+        
+        System.out.println("Welcome to ABC College.");
+        int i;
+        for (i=0;i<6;i++) {
+            System.out.println(i + ">" + abc[i]);
+        }
+        System.out.print("Enter what you want to know: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        switch(n)
+        {
+        case 0: System.out.println(abc[0] + ":Delhi,India");
+        break;
+        case 1: System.out.println(abc[1] + "are BSc.,BBA,MSc.,MBA,BCom,MCom,Btech,Mtech,BA,MA,etc....");
+        break;
+        case 2: System.out.println("");
+        break;
+        case 3: System.out.println(abc[3] + ":3.5 Lakhs.");
+        break;
+        case 4: System.out.println("Each depatment has its own Library.");
+        break;
+        case 5: System.out.println("Phd, from iit's,Helpful.");
+        break;
+        default: System.out.println("For more details plz call on 101200113");
+        break;
+        }
+        if (n==0)
+            System.out.println("Want to know more about the location visit delhi.gov.in ");
+        else if(n==1)
+            System.out.print("Hope that u find that");
+        else if(n==2)
+            System.out.println("All B courses : 1 lakh p/a & All m cousres: 50k p/a");
+        else if(n==3)
+            System.out.println("And the highest package is 10 lakhs.");
+        else if(n==4)
+            System.out.println("If u want to pursue book then, contact librarian.");
+        else if(n==5)
+            System.out.println("U can go to acb.faculties.information  and check.");
+        else
+            System.out.println("Or 0909090909");                
+        
+    }
+}
